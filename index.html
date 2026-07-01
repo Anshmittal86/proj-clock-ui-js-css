@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HTML 5 Boilerplate</title>
+    <title>Clock Display</title>
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
 
     <div class="div__container">
-      <div class="div__clock">
-
-        <!-- Clock Hand  -->
-        <div class="hand" id="hour"><i style="--width: 4px;--height: 65px; --bg-color: #F11A7B"></i> </div>
-        <div class="hand" id="minute"><i style="--width: 4px;--height: 80px; --bg-color: #068FFF"></i> </div>
-        <div class="hand" id="second"><i style="--width: 3px;--height: 90px; --bg-color: #f4f4f4"></i> </div>
+      <div class="toggle">
+        <button id="toggleButton">Toggle Clock</button>
+      </div>
+      <div class="clock" id="analogClock">
+        <!-- Analog Clock Elements -->
+        <div class="hand" id="hour"><i style="--width: 4px;--height: 65px; --bg-color: #F11A7B"></i></div>
+        <div class="hand" id="minute"><i style="--width: 4px;--height: 80px; --bg-color: #068FFF"></i></div>
+        <div class="hand" id="second"><i style="--width: 3px;--height: 90px; --bg-color: #f4f4f4"></i></div>
 
         <span style="--i: 1"><b>1</b></span>
         <span style="--i: 2"><b>2</b></span>
@@ -29,10 +31,13 @@
         <span style="--i: 10"><b>10</b></span>
         <span style="--i: 11"><b>11</b></span>
         <span style="--i: 12"><b>12</b></span>
+      </div>
 
+      <div class="clock" id="digitalClock">
+        <div id="digitalDisplay"></div>
       </div>
     </div>
 
-	<script src="./script.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
